@@ -1,0 +1,14 @@
+.menu-bar {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    a {
+      color: #fff;
+    }
+    .logo {
+      font-size: 3rem;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+
+  --bakery-font-color: #1c1c1c;
+  --bakery-primary: #5c4033;
+  --bakery-secondary: #f5f5dc;
+  --bakery-background: #f5f5f5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+@media (min-width: 2560px) {
+  html {
+    font-size: 120%;
+  }
+}
+@media (min-width: 2880px) {
+  html {
+    font-size: 140%;
+  }
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 300 1rem "Montserrat", sans-serif;
+}
+
+body {
+  background: var(--bakery-background);
+  color: var(--bakery-font-color);
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
