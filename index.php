@@ -21,11 +21,24 @@
   
 </div>
 <div class="container">
-  
+  <h2>Our most ordered products</h2>
+  <div class="products-container">
+    <div>
+
+      <?php include './Components/Card/index.php'; ?>
+    </div>
+    <div class="miniCards-container">
+      <?php include './Components/MiniCard/index.php'; ?>
+      <?php include './Components/MiniCard/index.php'; ?>
+    </div>
   </div>
+
+</div>
   <?php
   include './Components/Footer/index.php';
   ?>
 </body>
 
 </html>
+
+<script src="scripts/buttonQuantity.js"></script> 

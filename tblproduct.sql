@@ -31,6 +31,7 @@ CREATE TABLE `tblproduct` (
   `id` int(8) NOT NULL,
   `name` varchar(255) NOT NULL,
   `code` varchar(255) NOT NULL,
+  `description` varchar(350) NOT NULL,
   `image` text NOT NULL,
   `price` double(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -39,19 +40,19 @@ CREATE TABLE `tblproduct` (
 -- Dumping data for table `tblproduct`
 --
 
-INSERT INTO `tblproduct` (`id`, `name`, `code`, `image`, `price`) VALUES
-(1, 'Muffins', 'Muf01', 'product-images/muffins.jpeg', 2.50),
-(2, 'Cookies', 'COK01', 'product-images/cookies.jpeg', 5.00),
-(3, 'Cake', 'CAK01', 'product-images/cakes.jpeg', 10.00),
-(4, 'Bread', 'BRD01', 'product-images/breads.jpeg', 3.50),
-(5, 'Brownies', 'BRW01', 'product-images/brownies.jpeg', 2.00),
-(6, 'Croissants', 'CRO01', 'product-images/croissants.jpeg', 6.00),
-(7, 'Eclairs', 'ECR01', 'product-images/Eclairs.jpeg', 5.00),
-(8, 'Fruit Tarts and Pies', 'FTP01', 'product-images/fruit.jpeg', 10.00),
-(9, 'Lamingtons', 'LAM01', 'product-images/lamingtons.jpeg', 4.00),
-(10, 'Macaroons', 'MAC01', 'product-images/macaroons.jpeg', 10.00),
-(11, 'Savoury Pies', 'SAP01', 'product-images/savoury pies.jpeg', 5.00),
-(12, 'Pie roll', 'PRL01', 'product-images/roll.jpg', 4.00);
+INSERT INTO `tblproduct` (`id`, `name`, `code`, `description`, `image`, `price`) VALUES
+(1, 'Muffins', 'Muf01', 'Small, soft cakes, often with fruit or nuts.', 'muffins.jpeg', 2.50),
+(2, 'Cookies', 'COK01','Sweet, baked treats, crisp or chewy.', 'cookies.png', 5.00),
+(3, 'Cake', 'CAK01','Small, soft cakes, often with fruit or nuts.', 'cake.jpeg', 10.00),
+(4, 'Bread', 'BRD01','Small, soft cakes, often with fruit or nuts.', 'breads.jpeg', 3.50),
+(5, 'Brownies', 'BRW01','Small, soft cakes, often with fruit or nuts.', 'brownies.jpeg', 2.00),
+(6, 'Croissants', 'CRO01','Small, soft cakes, often with fruit or nuts.', 'croissants.jpeg', 6.00),
+(7, 'Eclairs', 'ECR01','Small, soft cakes, often with fruit or nuts.', 'eclairs.jpeg', 5.00),
+(8, 'Fruit Tarts and Pies','Small, soft cakes, often with fruit or nuts.', 'FTP01', 'fruit.jpeg', 10.00),
+(9, 'Lamingtons', 'LAM01','Small, soft cakes, often with fruit or nuts.', 'lamingtons.jpeg', 4.00),
+(10, 'Macaroons', 'MAC01','Small, soft cakes, often with fruit or nuts.', 'macaroons.jpeg', 10.00),
+(11, 'Savoury Pies', 'SAP01','Small, soft cakes, often with fruit or nuts.', 'savoury-pies.jpeg', 5.00),
+(12, 'Pie roll', 'PRL01','Small, soft cakes, often with fruit or nuts.', 'roll.jpg', 4.00);
 
 --
 -- Indexes for dumped tables

@@ -31,6 +31,20 @@
     <div class="footer-logo">
       <p>Luca Loaves</p>
       <p>Bakery</p>
+      <div class="footer-contact">
+        <p>
+        300 Pits Street, Sydney
+      </p>
+      <p>
+        Tel. (Bakery) 02 9180 2221
+      </p>
+      <p>
+        Mob. 041 231 231    
+      </p>
+      <p>
+        Fax 02 9230 1234
+      </p>
+      </div>
     </div>
   </div>
   <div class="footer-bottom">

@@ -1,6 +1,14 @@
 .container,
 .hero-content {
   padding: 1.5rem;
+
+  h2 {
+    font-weight: 300;
+    text-align: center;
+    color: var(--bakery-primary);
+    font-size: 2.5rem;
+    margin: 0 auto 3rem;
+  }
 }
 
 .hero {
@@ -50,5 +58,17 @@
       color: var(--white);
       transform: scale(1.05);
     }
+  }
+}
+
+.products-container {
+  max-width: 776px;
+  margin: 0 auto;
+  .miniCards-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
   }
 }
