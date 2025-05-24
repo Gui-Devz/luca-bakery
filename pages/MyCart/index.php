@@ -10,12 +10,18 @@ include '../../pages/Shop/Shop.php';
   <link rel="stylesheet" href="../../css/styles.css">
   <link rel="stylesheet" href="../../css/footerStyles.css">
   <link rel="stylesheet" href="../../css/myCartStyles.css">
+  <link rel="stylesheet" href="../../css/headerStyles.css">
+  <link rel="stylesheet" href="../../css/modalStyles.css">
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>My cart - Luca Loaves Bakery</title>
 </head>
 
 <body>
+  <?php include '../../Components/Header/index.php'; ?>
+  <?php include '../../Components/MenuModal/index.php'; ?>
   <div id="shopping-cart">
     <div class="txt-heading">
       <h1>My cart</h1>

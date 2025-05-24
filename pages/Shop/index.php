@@ -10,10 +10,14 @@ include './shop.php';
 	<link rel="stylesheet" type="text/css" href="../../css/cardStyles.css">
 	<link rel="stylesheet" type="text/css" href="../../css/footerStyles.css">
 	<link rel="stylesheet" type="text/css" href="../../css/shopStyles.css">
+	<link rel="stylesheet" href="../../css/headerStyles.css">
+	<link rel="stylesheet" href="../../css/modalStyles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
-	<title>Shop</title>
+
+	<title>Shop - Luca Loaves Bakery</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,50 +25,18 @@ include './shop.php';
 
 <body>
 
-	<div class="sticky">
-
-		<nav class="stroke" id="mainNav">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="/luca/index.html#Gallery">Gallery</a></li>
-				<li><a href="php/index.php">Shop</a></li> <!-- Shop.php file -->
-				<li><a href="/luca/index.html#About">About Us</a></li>
-				<li><a href="/luca/index.html#Contact">Contact</a></li>
-			</ul>
-		</nav>
-	</div>
-
-	<div class="header">
-
-		<a name="Home"><img src="product-images/Logo.jpeg" alt="Luca Loaves Logo">
-		</a>
-
-
-	</div>
-
-
-
+	<?php include '../../Components/Header/index.php'; ?>
+	<?php include '../../Components/MenuModal/index.php'; ?>
 
 	<div id="product-grid">
-		<div class="txt-heading"><b>Take a look at our Products</b></div>
+		<div class="txt-heading"><b>Take a look at our Shop</b></div>
 		<div class="products-list-container">
 			<?php
 			$product_array = $db_handle->runQuery("SELECT * FROM tblproduct ORDER BY id ASC");
 			if (!empty($product_array)) {
-				// $jsonData = json_encode($product_array); 
-				// echo '<script>console.log($jsonData)</script>';
 				foreach ($product_array as $key => $value) {
 			?>
 					<div class="product-item">
-						<!-- <form method="post" action="index.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
-				<div class="product-image"><img src="../../img/<?php echo $product_array[$key]["image"]; ?>"></div>
-				<div class="product-tile-footer">
-				<div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
-				<div class="product-price"><?php echo "$" . $product_array[$key]["price"]; ?></div>
-				<div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
-				</div>
-				</form> -->
-
 						<?php include '../../Components/MiniCard/index.php'; ?>
 					</div>
 

@@ -1,0 +1,53 @@
+.menu-bar-container {
+  margin-bottom: 4rem;
+}
+
+.menu-bar {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  background: var(--bakery-primary);
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    a {
+      color: #fff;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+    .logo {
+      font-size: 3rem;
+    }
+  }
+}
+
+.menu-bar-mobile {
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
+
+  background: var(--bakery-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  color: #fff;
+  a {
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    p {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+}
