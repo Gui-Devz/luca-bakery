@@ -1,19 +1,19 @@
 <div class="footer">
   <div class="footer-content">
-    
+
     <div class="footer-links">
       <div class="menu">
         <h4>Menu</h4>
         <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="pages/Shop/index.php">Shop</a></li>
-          <li><a href="#career">Career</a></li>
-          <li><a href="#About">About Us</a></li>
-          <li><a href="#Contact">Contact</a></li>
+          <li><a href="/luca">Home</a></li>
+          <li><a href="/luca/pages/Shop/index.php">Shop</a></li>
+          <li><a href="/luca/pages/Career/index.php">Career</a></li>
+          <li><a href="/luca/pages/AboutUs/index.php">About Us</a></li>
+          <li><a href="/luca/pages/Contact/index.php">Contact</a></li>
         </ul>
       </div>
       <div class="menu">
-      <h4>Social Media</h4>
+        <h4>Social Media</h4>
         <ul>
           <li><a href="#">Facebook</a></li>
           <li><a href="#">Instagram</a></li>
@@ -22,9 +22,9 @@
         </ul>
       </div>
       <div class="menu">
-      <h4>Resources</h4>
+        <h4>Resources</h4>
         <ul>
-          <li><a href="#Home">Sitemap</a></li>
+          <li><a href="/luca/pages/Sitemap/index.php">Sitemap</a></li>
         </ul>
       </div>
     </div>
@@ -33,17 +33,17 @@
       <p>Bakery</p>
       <div class="footer-contact">
         <p>
-        300 Pits Street, Sydney
-      </p>
-      <p>
-        Tel. (Bakery) 02 9180 2221
-      </p>
-      <p>
-        Mob. 041 231 231    
-      </p>
-      <p>
-        Fax 02 9230 1234
-      </p>
+          300 Pits Street, Sydney
+        </p>
+        <p>
+          Tel. (Bakery) 02 9180 2221
+        </p>
+        <p>
+          Mob. 041 231 231
+        </p>
+        <p>
+          Fax 02 9230 1234
+        </p>
       </div>
     </div>
   </div>

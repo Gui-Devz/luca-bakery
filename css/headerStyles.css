@@ -27,12 +27,12 @@
 }
 
 .menu-bar-mobile {
+  display: flex;
   @media screen and (min-width: 769px) {
     display: none;
   }
 
   background: var(--bakery-primary);
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 1.5rem;
@@ -49,5 +49,11 @@
       text-align: center;
       font-size: 0.9rem;
     }
+  }
+
+  .menu-icon {
+    color: white;
+    border: none;
+    background: var(--bakery-primary);
   }
 }

@@ -1,13 +1,8 @@
 <?php
-include("./pages/Shop/Shop.php");
-// $db_handle - variable is created in the Shop.php file
-// foreach ($_SESSION["cart_item"] as $item){
-//     $item_price = $item["quantity"]*$item["price"];
-//     $total_quantity += $item["quantity"];
-//     $total_price += ($item["price"]*$item["quantity"]);
-// }
+include "./pages/Shop/Shop.php";
 
-include './index.php';
-?>
+$productsDB = $db_handle->runQuery("SELECT * FROM tblproduct ORDER BY id ASC LIMIT 3");
 
-			
+$mini_products_array = array($productsDB[1], $productsDB[2]);
+$first_product_array = array($productsDB[0]);
+$product_array =  $first_product_array;

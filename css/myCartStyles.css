@@ -22,9 +22,34 @@ body {
   }
 }
 
+.empty-cart {
+  text-align: center;
+  min-height: 300px;
+
+  #btnContinue {
+    margin: 4rem auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    background-color: var(--bakery-secondary);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    color: var(--bakery-font-color);
+    border-radius: 4px;
+    text-decoration: none;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
+
 .table-container {
   overflow-x: auto;
-  margin-top: 2rem;
+  margin: 2rem 0 5rem;
 }
 .tbl-cart {
   max-width: 500px;

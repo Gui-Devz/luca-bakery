@@ -1,7 +1,7 @@
 <div class="modal-container">
   <nav>
     <div class="nav-content">
-      <div>
+      <div class="close-bnt">
         <i class="fa fa-close" style="font-size:24px"></i>
       </div>
 
@@ -13,13 +13,13 @@
           <a href="/luca/pages/Shop/index.php">Shop</a>
         </li>
         <li>
-          <a href="#career">Career</a>
+          <a href="/luca/pages/Career/index.php">Career</a>
         </li>
         <li>
-          <a href="#About">About Us</a>
+          <a href="/luca/pages/AboutUs/index.php">About Us</a>
         </li>
         <li>
-          <a href="#Contact">Contact</a>
+          <a href="/luca/pages/Shop/index.php">Contact</a>
         </li>
         <li>
           <a href="/luca/pages/MyCart/index.php">My cart</a>

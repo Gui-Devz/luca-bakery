@@ -11,4 +11,38 @@
       font-size: 3rem;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-bar-mobile {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  color: #fff;
+  a {
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    p {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+
+  .menu-icon {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
 }

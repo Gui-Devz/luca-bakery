@@ -1,5 +1,5 @@
 <?php
-include './shop.php';
+include './Shop.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +12,7 @@ include './shop.php';
 	<link rel="stylesheet" type="text/css" href="../../css/shopStyles.css">
 	<link rel="stylesheet" href="../../css/headerStyles.css">
 	<link rel="stylesheet" href="../../css/modalStyles.css">
+	<link rel="stylesheet" href="../../css/floatingCartStyles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -47,6 +48,20 @@ include './shop.php';
 		</div>
 	</div>
 
+	<?php
+	if (isset($_SESSION["cart_item"]) && !empty($_SESSION["cart_item"])) {
+		$total_quantity = 0;
+		foreach ($_SESSION["cart_item"] as $item) {
+			$total_quantity += $item["quantity"];
+		}
+	?>
+		<a href="../MyCart/index.php" class="floating-cart">
+			<i class="fa fa-shopping-cart"></i>
+			<span class="cart-badge"><?php echo $total_quantity; ?></span>
+		</a>
+	<?php
+	}
+	?>
 
 	<?php
 	include '../../Components/Footer/index.php';

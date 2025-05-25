@@ -1,11 +1,6 @@
-<?php
-
-?>
-
-
 <div class="miniCard-container">
   <div>
-    <img src="../../img/<?php echo $product_array[$key]["image"] ?>" alt="Image of <?php echo $product_array[$key]["name"] ?>">
+    <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/luca/img/<?php echo $product_array[$key]["image"] ?>" alt="Image of <?php echo $product_array[$key]["name"] ?>" />
   </div>
   <div class="miniCard-content">
     <div class="miniCard-header">

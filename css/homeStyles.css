@@ -1,23 +1,42 @@
+body {
+  position: relative;
+}
+
 .container,
 .hero-content {
   padding: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 1.5rem 0rem;
+  }
 
   h2 {
     font-weight: 300;
     text-align: center;
     color: var(--bakery-primary);
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     margin: 0 auto 3rem;
   }
 }
 
 .hero {
   width: 100%;
-  min-height: 80vh;
+  min-height: 70vh;
+  @media screen and (max-width: 768px) {
+    min-height: 60vh;
+  }
   position: relative;
   background-image: url("../img/header-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   .overlay {
     position: absolute;
@@ -30,26 +49,39 @@
 }
 
 .hero-content {
-  margin-top: 4rem;
+  padding-left: clamp(1rem, 3vw, 2rem);
+  margin-top: clamp(5rem, 5vw, 4rem);
+
+  @media screen and (max-width: 768px) {
+    margin-top: clamp(2rem, 5vw, 4rem);
+  }
+
   h1 {
     font-weight: 300;
     color: var(--white);
-    font-size: 4rem;
-    max-width: 520px;
+    font-size: 2.5rem;
+    max-width: min(90%, 365px);
+
+    @media screen and (max-width: 768px) {
+      max-width: min(90%, 380px);
+    }
+
     span {
       font-weight: 700;
     }
   }
+
   .button {
-    margin-top: 4rem;
+    margin-top: clamp(2rem, 5vw, 4rem);
     max-width: fit-content;
+
     a {
       background-color: var(--bakery-secondary);
       color: var(--bakery-primary);
-      padding: 1rem 2rem;
+      padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 3vw, 2rem);
       border-radius: 5px;
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: clamp(1.2rem, 2vw, 1.5rem);
       transition: all 0.3s ease-in-out;
     }
 
@@ -62,13 +94,37 @@
 }
 
 .products-container {
-  max-width: 776px;
+  width: 100%;
   margin: 0 auto;
+
   .miniCards-container {
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 1.2rem;
+    gap: clamp(1rem, 3vw, 1.2rem);
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}
+
+.bigProductCard-container {
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.miniProductCard-container {
+  width: fit-content;
+  max-width: 400px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }

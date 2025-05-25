@@ -1,4 +1,5 @@
 .card-container {
+  margin: 0 auto;
   display: flex;
   max-height: 310px;
   max-width: 776px;
@@ -105,14 +106,23 @@
 }
 
 .miniCard-container {
+  position: relative;
   background: #fff;
   max-width: 368px;
   width: 368px;
-  max-height: 422px;
+  min-height: 435px;
+  max-height: 435px;
   border-radius: 8px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  .miniCard-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
 
   img {
     width: 100%;
@@ -135,6 +145,7 @@
     p {
       margin: 0 auto;
       padding: 0rem 2rem;
+      min-height: 36px;
     }
   }
 
